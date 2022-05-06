@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useContext} from "react";
 import styled from "styled-components";
+import { IMainHeaderContext, MainHeaderContext } from "../../contexts/providers/MainHeaderProvider";
 
 const MainHeader = () => {
+  const {mainHeaderTitle} = useContext(MainHeaderContext) as IMainHeaderContext;
+
   return (
-    <StyledMainHeader>MainHeader</StyledMainHeader>
+    <StyledMainHeader>{mainHeaderTitle}</StyledMainHeader>
   )
 }
 

@@ -1,16 +1,16 @@
 import React, {useContext, useEffect} from "react";
 import { IMainHeaderContext, MainHeaderContext } from '../../contexts/providers/MainHeaderProvider';
 
-const ContactsPage = () => {
+const HomePage = () => {
   const {setMainHeaderTitle} = useContext(MainHeaderContext) as IMainHeaderContext;
 
   useEffect(() => {
-    setMainHeaderTitle("Contacts");
+    setMainHeaderTitle("Home");
   }, [setMainHeaderTitle]);
 
   return (
-    <div>ContactsPage</div>
+    <div>HomePage</div>
   )
 }
 
-export default ContactsPage;
+export default HomePage;

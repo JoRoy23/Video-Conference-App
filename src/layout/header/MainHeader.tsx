@@ -17,18 +17,18 @@ const MainHeader = () => {
 export default MainHeader;
 
 const StyledMainHeader = styled.header`
-    grid-area: mainHeader;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2.3rem 3rem 2.3rem 5rem;
-    border-bottom: var(--grey-border); 
-    background-color: var(--dark-black);
+  grid-area: mainHeader;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.3rem 3rem 2.3rem 5rem;
+  border-bottom: var(--grey-border); 
+  background-color: var(--dark-black);
 
-    .injected-svg {
-      display: block;
-    }
+  .injected-svg {
+    display: block;
+  }
 `;
 
 const HeaderTitle = styled.h2`

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Refresh</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.349004836" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Zoom-Redesign----Meetings" transform="translate(-290.000000, -276.000000)" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="Refresh" transform="translate(279.000000, 265.000000)">
+                <g transform="translate(12.000000, 12.000000)">
+                    <path d="M12.0179045,3.47422739 C16.4361825,3.47422739 20.0179045,7.05594939 20.0179045,11.4742274 C20.0179045,15.8925054 16.4361825,19.4742274 12.0179045,19.4742274 C7.59962648,19.4742274 4.01790448,15.8925054 4.01790448,11.4742274 C4.01790448,7.05594939 7.59962648,3.47422739 12.0179045,3.47422739 Z" id="Rectangle-8" fill-opacity="0" fill="#D8D8D8" stroke-dasharray="42" transform="translate(12.017904, 11.474227) rotate(125.000000) translate(-12.017904, -11.474227) "></path>
+                    <polyline id="Path-2" transform="translate(18.500000, 7.000000) rotate(15.000000) translate(-18.500000, -7.000000) " points="16 9.5 21 9.5 21 4.5"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

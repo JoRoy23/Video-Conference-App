@@ -3,3 +3,13 @@ export const dateFormat = {
     LONG_DATE: "dddd, DD MMMM YYYY"
 
 };
+
+export const meetingsStatus = {
+    UPCOMING: "upcoming",
+    RECORDED: "recorded",
+};
+
+export const readableMeetingStatus = {
+    [meetingsStatus.UPCOMING]: "Upcoming",
+    [meetingsStatus.RECORDED]: "Recorded",
+};

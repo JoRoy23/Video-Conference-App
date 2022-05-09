@@ -6,26 +6,28 @@ import Avatar4 from "../assets/images/avatar-4.svg";
 import Avatar5 from "../assets/images/avatar-5.svg";
 import Avatar6 from "../assets/images/avatar-6.svg";
 import Avatar7 from "../assets/images/avatar-7.svg";
-
 interface IParticipants {
   id: number;
   avatar: string;
 }
-
 export interface IMeeting{
   id: string;
   title: string;
+  description: string;
   startAt: string;
   endAt: string;
+  status: string;
   participants: IParticipants[];
 }
 
-const todayMeetings = [
+const meetings = [
     {
       id: "707 904 6594",
       title: "Design Daily Zoom Meeting",
+      description: "Everyday's Standup Meeting discussing all the team work and tasks done. Check out all team members and let them report about their progress.",
       startAt: "10:00",
       endAt: "11:30",
+      status: "upcoming",
       participants: [
         {
           id: 0,
@@ -36,6 +38,7 @@ const todayMeetings = [
           avatar: Avatar1
         },
         { 
+
           id: 2,
           avatar: Avatar2
         },
@@ -56,8 +59,10 @@ const todayMeetings = [
     {
       id: "707 904 6595",
       title: "Daily Standup Tech Conference",
+      description: "Everyday's Standup Meeting discussing all the team work and tasks done. Check out all team members and let them report about their progress.",
       startAt: "14:00",
       endAt: "16:30",
+      status: "upcoming",
       participants: [
         {
           id: 3,
@@ -76,8 +81,10 @@ const todayMeetings = [
     {
       id: "707 904 6596",
       title: "Marketing Strategy Development",
+      description: "Everyday's Standup Meeting discussing all the team work and tasks done. Check out all team members and let them report about their progress.",
       startAt: "10:00",
       endAt: "11:30",
+      status: "upcoming",
       participants: [
         {
           id: 6,
@@ -91,4 +98,4 @@ const todayMeetings = [
     }
   ];
 
-  export default todayMeetings;
+  export default meetings;

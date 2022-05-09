@@ -1,18 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import { ReactSVG } from "react-svg";
-import { IMeeting } from "../data/todayMeetings";
+import { IMeeting } from "../data/meetings";
+import AccentButton from "./buttons/AccentButton";
+import ActiveMeetingCardButton from "./buttons/ActiveMeetingCardButton";
 import ClockIcon from "../assets/icons/clock.svg";
-import MoreOptions from "./buttons/MoreOptions";
-import StyledAccentButton from "./buttons/StyledAccentButton";
-import StyledDefaultButton from "./buttons/StyledDefaultButton";
-import StyledMoreIndicator from "./StyledMoreIndicator";
+import DefaultButton from "./buttons/DefaultButton";
+import MoreIndicator from "./MoreIndicator";
+import MoreOptionsButton from "./buttons/MoreOptionsButton";
 
 interface IMeetingCard {
   meeting: IMeeting;
+  readOnly?: boolean; 
+  selected?: boolean;
+  onMeetingCardClick?: (meeting: IMeeting) => void;
 };
 
-const MeetingCard = ({ meeting }: IMeetingCard) => {
+const MeetingCard = ({ meeting, readOnly, selected, onMeetingCardClick }: IMeetingCard) => {
   const nbOfAvatarsVisible = 3;
 
   const getCardTime = () => {
@@ -27,6 +31,12 @@ const MeetingCard = ({ meeting }: IMeetingCard) => {
     return `+${participants.length - nbOfAvatarsVisible}`;
   }
 
+  const handleMeetingCardClick = () => {
+    if (onMeetingCardClick) {
+      onMeetingCardClick(meeting);
+    }
+  };
+
   const renderParticipantAvatar = () => {
     let { participants } = meeting;
     
@@ -38,16 +48,16 @@ const MeetingCard = ({ meeting }: IMeetingCard) => {
   };
 
   return (
-    <StyledMeetingCard as="li">
+    <StyledMeetingCard selected={selected} onClick={handleMeetingCardClick}>
       <TopContainer>
-        <CardInfo>
+        <CardInfo selected={selected}>
           <h2>{meeting.title}</h2>
-          <TimeInfo>
+          <TimeInfo selected={selected}>
             <ReactSVG src={ClockIcon}/>
             <p>{getCardTime()}</p>
           </TimeInfo>
         </CardInfo>
-        <MoreOptions />
+        {!readOnly && <MoreOptionsButton />}
       </TopContainer>
       <BottomContainer>
         <Participants>
@@ -55,12 +65,12 @@ const MeetingCard = ({ meeting }: IMeetingCard) => {
             {renderParticipantAvatar()}
           </Avatars>
           {meeting.participants.length > nbOfAvatarsVisible && (
-            <StyledMoreIndicator>{getNbOfParticipantsHidden()}</StyledMoreIndicator>
+            <MoreIndicator>{getNbOfParticipantsHidden()}</MoreIndicator>
           )}
         </Participants>
         <Buttons>
-          <StyledDefaultButton>id</StyledDefaultButton>
-          <ExtendedAccentButton>Start</ExtendedAccentButton>
+          {selected ? <ActiveMeetingCardButton>id</ActiveMeetingCardButton> : <DefaultButton>id</DefaultButton>}
+          {!readOnly && <ExtendedAccentButton>Start</ExtendedAccentButton>}
         </Buttons>
       </BottomContainer>
     </StyledMeetingCard>
@@ -69,14 +79,12 @@ const MeetingCard = ({ meeting }: IMeetingCard) => {
 
 export default MeetingCard;
 
-const StyledMeetingCard = styled.div`
-  min-width: 55rem;
-  max-width: 80rem;
+const StyledMeetingCard = styled.li<{ selected: boolean | undefined }>`
   padding: 3.5rem 3.5rem 3rem 3.5rem;
   margin: 0 auto;
   border-radius: 1.4rem;
   border: var(--dark-grey-border);
-  background-color: var(--medium-black);
+  background-color: ${props => props.selected ? "var(--blue-accent)" : "var(--medium-black)"};
 `;
 
 const TopContainer = styled.div`
@@ -94,20 +102,20 @@ const BottomContainer = styled.div`
   column-gap: 2rem;
 `;
 
-const CardInfo = styled.div`
+const CardInfo = styled.div<{ selected: boolean | undefined }>`
   > h2 {
     margin-bottom: 1.5rem;
-    color: var(--medium-grey);
+    color: ${props => props.selected ? "var(--white)" : "var(--medium-grey)"};
   }
 `;
 
-const TimeInfo = styled.div`
+const TimeInfo = styled.div<{ selected: boolean | undefined }>`
   display: flex;
   align-items: center;
   column-gap: 0.8rem;
 
   > p {
-    color: var(--dark-grey);
+    color: ${props => props.selected ? "var(--light-grey)" : "var(--dark-grey)"};
   }
 
   .injected-svg {
@@ -145,6 +153,6 @@ const Buttons = styled.div`
   column-gap: 1rem;
 `;
 
-const ExtendedAccentButton = styled(StyledAccentButton)`
+const ExtendedAccentButton = styled(AccentButton)`
   padding: 1.5rem 3rem;
 `;

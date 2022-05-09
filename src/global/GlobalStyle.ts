@@ -7,10 +7,9 @@ const GlobalStyle = createGlobalStyle`
         --dark-black: #1c1f2e;
         --light-grey: #dcdcdf;
         --medium-grey: #adaeb4;
-        --dark-grey: #6c6e78;
+        --dark-grey: #61636d;
         --white: #ffffff;
         --light-white: #ffffffd9;
-        --light-grey: #ffffff99;
         --blue-accent: #0e78f9;
         --orange-accent: #ff742e;
 
@@ -35,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: "Gilroy";
 
         h1 {
-            font-size: 2.4rem;
+            font-size: 3rem;
             font-weight: 400;
         }
 
@@ -52,6 +51,7 @@ const GlobalStyle = createGlobalStyle`
         p {
             font-size: 1.4rem;
             font-weight: 400;
+            line-height: 2.4rem;
         }
 
         span {
@@ -59,6 +59,11 @@ const GlobalStyle = createGlobalStyle`
         }
 
         button {
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        a {
             font-size: 1.4rem;
             font-weight: 400;
         }

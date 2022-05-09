@@ -1,16 +1,16 @@
 import React, { useContext, useEffect } from "react";
 import { MainHeaderContext } from "../../contexts/providers/MainHeaderProvider";
 
-const NotFoundPage = () => {
+const SettingsPage = () => {
   const { setMainHeaderTitle } = useContext(MainHeaderContext)!;
 
   useEffect(() => {
-    setMainHeaderTitle("404");
+    setMainHeaderTitle("Settings")
   }, [setMainHeaderTitle]);
 
   return (
-    <div>NotFoundPage</div>
+    <div>SettingsPage</div>
   );
 };
 
-export default NotFoundPage;
+export default SettingsPage;

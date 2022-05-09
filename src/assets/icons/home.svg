@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Home</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.397646949" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Zoom-Redesign----Meetings" transform="translate(-199.000000, -309.000000)" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="Menu" transform="translate(185.000000, 310.000000)">
+                <g id="Home" transform="translate(15.000000, 0.000000)">
+                    <path d="M1,18 L5,18 C5.55228475,18 6,17.5522847 6,17 L6,12 C6,11.4477153 6.44771525,11 7,11 L11,11 C11.5522847,11 12,11.4477153 12,12 L12,17 C12,17.5522847 12.4477153,18 13,18 L17,18 C17.5522847,18 18,17.5522847 18,17 L18,7.90753645 C18,7.33081129 17.7510391,6.78215924 17.3170092,6.40238306 L10.565539,0.494846611 C10.200956,0.175836495 9.73297606,2.13145471e-15 9.24852977,0 L8.75147023,0 C8.26702394,9.7716976e-16 7.79904401,0.175836495 7.43446102,0.494846611 L0.682990784,6.40238306 C0.248960864,6.78215924 1.9618458e-15,7.33081129 0,7.90753645 L0,17 C6.76353751e-17,17.5522847 0.44771525,18 1,18 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

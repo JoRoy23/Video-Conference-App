@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Contacts</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.395205543" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Zoom-Redesign----Home" transform="translate(-198.000000, -486.000000)" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="Menu" transform="translate(185.000000, 295.000000)">
+                <g id="Contacts" transform="translate(14.000000, 192.000000)">
+                    <rect id="Rectangle" fill-opacity="0" fill="#D8D8D8" x="0" y="0" width="20" height="20" rx="4"></rect>
+                    <circle id="Oval" fill-opacity="0" fill="#D8D8D8" cx="10" cy="7" r="2"></circle>
+                    <path d="M10,11.5 C8.4296875,11.5 7.27035522,11.9109802 6.52200317,12.7329407 C6.18594631,13.0987442 6.00056055,13.5774901 6,14.0742188 L6,14.5 C6,15.0522847 6.44771525,15.5 7,15.5 L13,15.5 C13.5522847,15.5 14,15.0522847 14,14.5 L14,14.0742188 C13.9994395,13.5774901 13.8140537,13.0987442 13.4779968,12.7329407 C12.7296448,11.9109802 11.5703125,11.5 10,11.5 Z" id="Path-5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

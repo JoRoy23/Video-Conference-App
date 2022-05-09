@@ -1,12 +1,11 @@
-import React, {createContext, useState} from "react";
-
-export interface IMainHeaderContext {
+import React, {createContext, Dispatch, ReactNode, SetStateAction, useState} from "react";
+interface IMainHeaderContext {
   mainHeaderTitle: string;
-  setMainHeaderTitle: React.Dispatch<React.SetStateAction<string>>;
+  setMainHeaderTitle: Dispatch<SetStateAction<string>>;
 }
 
 interface IMainHeaderProvider {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export const MainHeaderContext = createContext<IMainHeaderContext | null>(null);

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="21px" viewBox="0 0 22 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Chat</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.404017857">
+        <g id="Zoom-Redesign----Home" transform="translate(-198.000000, -367.000000)">
+            <g id="Menu" transform="translate(185.000000, 295.000000)">
+                <g id="Chat" transform="translate(14.000000, 73.000000)">
+                    <path d="M16,-2.20268248e-13 C18.209139,-2.2067406e-13 20,1.790861 20,4 L20,11.8333333 C20,14.0424723 18.209139,15.8333333 16,15.8333333 L15.218,15.833 L15.412673,18.7917606 C15.4271315,19.0122008 15.2601504,19.2026239 15.0397101,19.2170825 C14.9542721,19.2226863 14.8692904,19.200727 14.7972625,19.1544339 L9.629,15.833 L4,15.8333333 C1.790861,15.8333333 2.705415e-16,14.0424723 0,11.8333333 L0,4 C-2.705415e-16,1.790861 1.790861,-2.19862436e-13 4,-2.20268248e-13 L16,-2.20268248e-13 Z" id="Rectangle-6" stroke="#FFFFFF" stroke-width="1.5" fill-rule="nonzero" transform="translate(10.000000, 9.220740) scale(-1, 1) translate(-10.000000, -9.220740) "></path>
+                    <circle id="Oval" fill="#FFFFFF" cx="5.88125846" cy="7.91666667" r="1.25"></circle>
+                    <circle id="Oval-Copy-34" fill="#FFFFFF" cx="10.0479251" cy="7.91666667" r="1.25"></circle>
+                    <circle id="Oval-Copy-35" fill="#FFFFFF" cx="14.2145918" cy="7.91666667" r="1.25"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

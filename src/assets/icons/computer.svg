@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="37px" viewBox="0 0 40 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>computer</title>
+    <defs>
+        <path d="M19,23 C19.5522847,23 20,23.4477153 20,24 C20,24.5522847 19.5522847,25 19,25 L9,25 C8.44771525,25 8,24.5522847 8,24 C8,23.4477153 8.44771525,23 9,23 L19,23 Z M22,0 C25.3137085,-6.08718376e-16 28,2.6862915 28,6 L28,16 C28,19.3137085 25.3137085,22 22,22 L6,22 C2.6862915,22 4.05812251e-16,19.3137085 0,16 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 L22,0 Z M19.3652382,4.57404135 C18.8808567,4.57446912 18.4971545,4.95444035 18.4968596,5.43397623 C18.4965646,5.9135121 18.8797998,6.29280601 19.3641813,6.29237823 L21.0191514,6.29091666 L17.3302251,9.94397336 C16.9936442,10.2772815 16.9933083,10.8234195 17.3294714,11.1561416 C17.6656507,11.4888474 18.2173074,11.4883603 18.5538883,11.1550522 L22.2428147,7.50199546 L22.2418069,9.1404097 C22.2415119,9.61994558 22.6247471,9.99923949 23.1091286,9.99881171 C23.3513194,9.99859782 23.5666574,9.90516461 23.721491,9.75184925 C23.8763118,9.59852117 23.9706364,9.37199049 23.9775073,9.13887683 L23.9730616,5.42913996 C23.9732008,5.20269246 23.8858783,4.98298242 23.7245238,4.82327201 C23.5631539,4.66357702 23.341199,4.57719022 23.1124632,4.57739223 L19.3652382,4.57404135 Z" id="path-1"></path>
+        <filter x="-32.1%" y="-28.0%" width="178.6%" height="188.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.357219877   0 0 0 0 0.791949728  0 0 0 0.495356206 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Zoom-Redesign----Home" transform="translate(-576.000000, -566.000000)">
+            <g id="Functions" transform="translate(309.000000, 295.000000)">
+                <g id="Share-Screen" transform="translate(230.000000, 230.000000)">
+                    <g id="Rectangle-2" transform="translate(41.000000, 43.000000)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
 const MemberCard = () => {
   return (
-    <div>MemberCard</div>
-  )
-}
+    <StyledMemberCard>MemberCard</StyledMemberCard>
+  );
+};
 
-export default MemberCard
+export default MemberCard;
+
+const StyledMemberCard = styled.div``;

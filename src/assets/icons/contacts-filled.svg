@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Contacts Filled</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Zoom-Redesign----Contacts-2" transform="translate(-199.000000, -487.000000)" stroke-width="1.5">
+            <g id="Menu" transform="translate(185.000000, 310.000000)">
+                <g id="Contacts" transform="translate(0.000000, 163.000000)">
+                    <g id="Contacts-Filled" transform="translate(15.000000, 15.000000)">
+                        <rect id="Rectangle" stroke="#FFFFFF" fill="#FFFFFF" x="0" y="0" width="18" height="18" rx="4"></rect>
+                        <circle id="Oval" stroke="#242736" fill="#242736" cx="9" cy="6" r="2"></circle>
+                        <path d="M9,10.5 C7.4296875,10.5 6.27035522,10.9109802 5.52200317,11.7329407 C5.18594631,12.0987442 5.00056055,12.5774901 5,13.0742188 L5,13.5 C5,14.0522847 5.44771525,14.5 6,14.5 L12,14.5 C12.5522847,14.5 13,14.0522847 13,13.5 L13,13.0742188 C12.9994395,12.5774901 12.8140537,12.0987442 12.4779968,11.7329407 C11.7296448,10.9109802 10.5703125,10.5 9,10.5 Z" id="Path-5" stroke="#242736" fill="#242736"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo Icon</title>
+    <defs>
+        <path d="M14,0.0227272727 C16.209139,0.0227272727 18,1.81358827 18,4.02272727 L18,13.0227273 C18,13.575012 17.5522847,14.0227273 17,14.0227273 L4,14.0227273 C1.790861,14.0227273 2.705415e-16,12.2318663 0,10.0227273 L0,1.02272727 C-6.76353751e-17,0.470442523 0.44771525,0.0227272727 1,0.0227272727 L14,0.0227272727 Z M4.15,9.02272727 L3.85,9.02272727 C3.38055796,9.02272727 3,9.40328524 3,9.87272727 C3,10.3421693 3.38055796,10.7227273 3.85,10.7227273 L3.85,10.7227273 L4.15,10.7227273 C4.61944204,10.7227273 5,10.3421693 5,9.87272727 C5,9.40328524 4.61944204,9.02272727 4.15,9.02272727 L4.15,9.02272727 Z M11.15,9.02272727 L6.85,9.02272727 C6.38055796,9.02272727 6,9.40328524 6,9.87272727 C6,10.3421693 6.38055796,10.7227273 6.85,10.7227273 L6.85,10.7227273 L11.15,10.7227273 C11.619442,10.7227273 12,10.3421693 12,9.87272727 C12,9.40328524 11.619442,9.02272727 11.15,9.02272727 L11.15,9.02272727 Z" id="path-1"></path>
+        <filter x="-33.3%" y="-35.7%" width="177.8%" height="200.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.357219877   0 0 0 0 0.791949728  0 0 0 0.495356206 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Zoom-Redesign----Home" transform="translate(-185.000000, -173.000000)">
+            <g id="2-copy-5" transform="translate(185.000000, 173.000000)">
+                <rect id="Rectangle" fill="#0E78F9" x="0" y="0" width="48" height="48" rx="12"></rect>
+                <g id="Camera" transform="translate(13.000000, 17.000000)">
+                    <path d="M22.5,3.09434945 L22.5,10.9628831 L18.5,8.26591337 L18.5,5.73071309 L22.5,3.09434945 Z" id="Rectangle-10" stroke="#FFFFFF" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <g id="Rectangle-11">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

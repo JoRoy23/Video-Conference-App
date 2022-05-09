@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Home Filled 2</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Zoom-Redesign----Home" transform="translate(-199.000000, -309.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="Home" transform="translate(185.000000, 295.000000)">
+                <path d="M16,33 L20,33 C20.5522847,33 21,32.5522847 21,32 L21,27 C21,26.4477153 21.4477153,26 22,26 L26,26 C26.5522847,26 27,26.4477153 27,27 L27,32 C27,32.5522847 27.4477153,33 28,33 L32,33 C32.5522847,33 33,32.5522847 33,32 L33,22.4537682 C33,22.1654056 32.8755196,21.8910796 32.6585046,21.7011915 L25.2827695,15.2474233 C25.100478,15.0879182 24.866488,15 24.6242649,15 L23.3757351,15 C23.133512,15 22.899522,15.0879182 22.7172305,15.2474233 L15.3414954,21.7011915 C15.1244804,21.8910796 15,22.1654056 15,22.4537682 L15,32 C15,32.5522847 15.4477153,33 16,33 Z" id="Home-Filled-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

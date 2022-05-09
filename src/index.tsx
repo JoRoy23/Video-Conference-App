@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import GlobalStyle from './global/GlobalStyle';
 import MainHeaderProvider from './contexts/providers/MainHeaderProvider';
+import "./css/fonts.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

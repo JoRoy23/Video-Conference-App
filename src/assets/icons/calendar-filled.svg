@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Calendar Filled</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Zoom-Redesign----Schedule" transform="translate(-199.000000, -610.000000)">
+            <g id="Menu" transform="translate(185.000000, 295.000000)">
+                <g id="Schedule" transform="translate(0.000000, 303.000000)">
+                    <g id="Calendar-Filled" transform="translate(14.000000, 13.000000)">
+                        <path d="M4,1 L16,1 C18.209139,1 20,2.790861 20,5 L20,17 C20,19.209139 18.209139,21 16,21 L4,21 C1.790861,21 2.705415e-16,19.209139 0,17 L0,5 C-2.705415e-16,2.790861 1.790861,1 4,1 Z" id="Rectangle-11" fill="#FFFFFF"></path>
+                        <rect id="Rectangle" fill="#242736" x="4" y="5" width="12" height="1.5" rx="0.75"></rect>
+                        <path d="M9.45,16.5 L9.45,15.17 L6.82,15.17 L8.19,13.8 C8.96,13.03 9.34,12.29 9.34,11.56 C9.34,10.89 9.11,10.35 8.66,9.96 C8.21,9.56 7.66,9.36 7.03,9.36 C6.04,9.36 5.16,9.88 4.72,10.84 L5.88,11.52 C6.13,10.97 6.52,10.7 7.05,10.7 C7.58,10.7 7.96,11.06 7.96,11.61 C7.96,11.98 7.69,12.45 7.16,13.01 L4.77,15.47 L4.77,16.5 L9.45,16.5 Z M12.96,16.64 C13.84,16.64 14.53,16.31 15.02,15.65 C15.51,14.98 15.76,14.1 15.76,13 C15.76,11.9 15.51,11.02 15.02,10.36 C14.53,9.69 13.84,9.36 12.96,9.36 C12.09,9.36 11.4,9.69 10.9,10.36 C10.41,11.02 10.16,11.9 10.16,13 C10.16,14.1 10.41,14.98 10.9,15.65 C11.4,16.31 12.09,16.64 12.96,16.64 Z M12.96,15.29 C12.03,15.29 11.54,14.49 11.54,13 C11.54,11.51 12.03,10.7 12.96,10.7 C13.89,10.7 14.39,11.51 14.39,13 C14.39,14.48 13.89,15.29 12.96,15.29 Z" id="20" fill="#242736" fill-rule="nonzero"></path>
+                        <line x1="6" y1="2" x2="6" y2="0" id="Path-2" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="14" y1="2" x2="14" y2="0" id="Path-2-Copy" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

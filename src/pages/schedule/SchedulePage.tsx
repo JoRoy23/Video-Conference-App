@@ -1,8 +1,8 @@
 import React, {useContext, useEffect} from "react";
-import { IMainHeaderContext, MainHeaderContext } from "../../contexts/providers/MainHeaderProvider";
+import { MainHeaderContext } from "../../contexts/providers/MainHeaderProvider";
 
 const SchedulePage = () => {
-  const {setMainHeaderTitle} = useContext(MainHeaderContext) as IMainHeaderContext;
+  const {setMainHeaderTitle} = useContext(MainHeaderContext)!;
 
   useEffect(() => {
     setMainHeaderTitle("Schedule");
@@ -10,7 +10,7 @@ const SchedulePage = () => {
 
   return (
     <div>SchedulePage</div>
-  )
-}
+  );
+};
 
 export default SchedulePage;

@@ -74,6 +74,9 @@ const StyledMeetingsOptions = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  min-width: 55rem;
+  max-width: 100rem;
   padding-bottom: 2rem;
   margin-right: 1.2rem;
   border-bottom: var(--grey-border);

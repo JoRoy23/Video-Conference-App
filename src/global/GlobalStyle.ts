@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
         --dark-black: #1c1f2e;
         --light-grey: #dcdcdf;
         --medium-grey: #adaeb4;
-        --dark-grey: #61636d;
+        --dark-grey: #888a92;
         --white: #ffffff;
         --light-white: #ffffffd9;
         --blue-accent: #0e78f9;
@@ -44,8 +44,23 @@ const GlobalStyle = createGlobalStyle`
         }
 
         h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+        }
+
+        h4 {
             font-size: 1.6rem;
             font-weight: 400;
+        }
+
+        h5 {
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+
+        h6 {
+          font-size: 1.4rem;
+          font-weight: 400;
         }
 
         p {

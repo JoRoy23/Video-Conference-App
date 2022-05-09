@@ -26,6 +26,7 @@ const StyledMainLayout = styled.main`
     "mainNavigation mainHeader"
     "mainNavigation mainContent";
     height: 100vh;
+    overflow: hidden;
 `;
 
 const MainContent = styled.div`

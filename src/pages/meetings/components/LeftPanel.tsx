@@ -48,6 +48,7 @@ const StyledLeftPanel = styled.div`
   flex: 1 0 40%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 2rem 0.8rem 0 2rem;
   border-right: var(--grey-border); 
 `;

@@ -52,6 +52,9 @@ export default MeetingsList;
 
 const StyledMeetingsList = styled.div`
   flex-grow: 1;
+  width: 100%;
+  min-width: 55rem;
+  max-width: 100rem;
   padding-bottom: 2rem;
   overflow-x: hidden;
   overflow-y: auto;

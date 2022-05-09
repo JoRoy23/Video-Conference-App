@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import AddIcon from "../../../assets/icons/add-filled.svg";
-import BigCalendarIcon from "../../../assets/icons/calendar-big.svg";
-import CameraIcon from "../../../assets/icons/camera.svg";
-import ComputerIcon from "../../../assets/icons/computer.svg";
+import AddImg from "../../../assets/images/add.svg";
+import CalendarImg from "../../../assets/images/calendar.svg";
+import CameraImg from "../../../assets/images/camera.svg";
+import ComputerImg from "../../../assets/images/computer.svg";
 import HomeCard from "./HomeCard";
 
 const LeftPanel = () => {
   const cards = [
     {
       id: 0,
-      icon: CameraIcon,
+      image: CameraImg,
       title: "New Meeting",
       description: "set up new meeting",
       path: "/",
@@ -18,21 +18,21 @@ const LeftPanel = () => {
     },
     {
       id: 1,
-      icon: AddIcon,
+      image: AddImg,
       title: "Join Meeting",
       description: "via invitation link",
       path: "/"
     },
     {
       id: 2,
-      icon: BigCalendarIcon,
+      image: CalendarImg,
       title: "Schedule",
       description: "plan your meetings",
       path: "/schedule"
     },
     {
       id: 3,
-      icon: ComputerIcon,
+      image: ComputerImg,
       title: "Share Screen",
       description: "show your work",
       path: "/"

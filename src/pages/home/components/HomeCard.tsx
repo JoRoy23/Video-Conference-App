@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import { ReactSVG } from "react-svg";
-
 interface IHomeCard {
     card: {
         id: number;
-        icon: string;
+        image: string;
         title: string;
         description: string;
         path: string;
@@ -23,13 +21,13 @@ const HomeCard = ({ card }: IHomeCard) => {
 
   return (
     <StyledHomeCard background={card.background} onClick={handleHomeCardClick}>
-        <CardIcon>
-            <ReactSVG src={card.icon}/>
-        </CardIcon>
-        <CardInfo>
-            <CardTitle>{card.title}</CardTitle>
-            <CardDescription>{card.description}</CardDescription>
-        </CardInfo>
+      <ImageContainer>
+        <CardImage src={card.image} alt={`${card.title} logo`}/>
+      </ImageContainer>
+      <CardInfo>
+        <CardTitle>{card.title}</CardTitle>
+        <CardDescription>{card.description}</CardDescription>
+      </CardInfo>
     </StyledHomeCard>
   );
 };
@@ -49,22 +47,24 @@ const StyledHomeCard = styled.div<{background: string | undefined}>`
     cursor: pointer;
 `;
 
-const CardIcon = styled.div`
-    padding: 1.5rem;
+const ImageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
     border-radius: 1.2rem;
     border: 0.05rem solid #ffffff59;
     background-color: #ffffff26;
+`;
 
-    .injected-svg {
-        display: block;
-        width: 4rem;
-        height: 4rem;
-    }
+const CardImage = styled.img`
+  display: block;
 `;
 
 const CardInfo = styled.div``;
 
-const CardTitle = styled.h3`
+const CardTitle = styled.h4`
     margin-bottom: 0.6rem;
     color: var(--white);
 

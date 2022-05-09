@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { ReactSVG } from "react-svg";
 import { IMeeting } from "../data/meetings";
-import AccentButton from "./buttons/AccentButton";
 import ActiveMeetingCardButton from "./buttons/ActiveMeetingCardButton";
 import ClockIcon from "../assets/icons/clock.svg";
 import DefaultButton from "./buttons/DefaultButton";
+import LargeAccentButton from "./buttons/LargeAccentButton";
 import MoreIndicator from "./MoreIndicator";
 import MoreOptionsButton from "./buttons/MoreOptionsButton";
 
@@ -43,12 +43,20 @@ const MeetingCard = ({ meeting, readOnly, selected, onMeetingCardClick }: IMeeti
     participants = participants.length > nbOfAvatarsVisible ? participants.slice(0, nbOfAvatarsVisible) : participants;
 
     return participants.map((participant) => (
-      <Avatar key={participant.id} src={participant.avatar} alt="avatar"/>
+      <Avatar 
+        key={participant.id} 
+        src={participant.avatar} 
+        alt="avatar"
+      />
     )) 
   };
 
   return (
-    <StyledMeetingCard selected={selected} onClick={handleMeetingCardClick}>
+    <StyledMeetingCard 
+      clickable={typeof onMeetingCardClick !== "undefined"} 
+      selected={selected} 
+      onClick={handleMeetingCardClick}
+    >
       <TopContainer>
         <CardInfo selected={selected}>
           <h2>{meeting.title}</h2>
@@ -65,12 +73,17 @@ const MeetingCard = ({ meeting, readOnly, selected, onMeetingCardClick }: IMeeti
             {renderParticipantAvatar()}
           </Avatars>
           {meeting.participants.length > nbOfAvatarsVisible && (
-            <MoreIndicator>{getNbOfParticipantsHidden()}</MoreIndicator>
+            <MoreIndicator 
+              border={selected ? "0.05rem solid #ffffff59" : "var(--grey-border)"}
+              color={selected ? "var(--white)" : "var(--button-light-color)"}
+            >
+              {getNbOfParticipantsHidden()}
+            </MoreIndicator>
           )}
         </Participants>
         <Buttons>
           {selected ? <ActiveMeetingCardButton>id</ActiveMeetingCardButton> : <DefaultButton>id</DefaultButton>}
-          {!readOnly && <ExtendedAccentButton>Start</ExtendedAccentButton>}
+          {!readOnly && <LargeAccentButton>Start</LargeAccentButton>}
         </Buttons>
       </BottomContainer>
     </StyledMeetingCard>
@@ -79,12 +92,13 @@ const MeetingCard = ({ meeting, readOnly, selected, onMeetingCardClick }: IMeeti
 
 export default MeetingCard;
 
-const StyledMeetingCard = styled.li<{ selected: boolean | undefined }>`
+const StyledMeetingCard = styled.li<{ clickable: boolean, selected: boolean | undefined }>`
   padding: 3.5rem 3.5rem 3rem 3.5rem;
   margin: 0 auto;
   border-radius: 1.4rem;
   border: var(--dark-grey-border);
   background-color: ${props => props.selected ? "var(--blue-accent)" : "var(--medium-black)"};
+  cursor: ${props => props.clickable ? "pointer" : "default"};
 `;
 
 const TopContainer = styled.div`
@@ -120,10 +134,14 @@ const TimeInfo = styled.div<{ selected: boolean | undefined }>`
 
   .injected-svg {
     position: relative;
-    top: -0.01rem;
+    top: -0.06rem;
     display: block;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+
+    path {
+      fill: ${props => props.selected ? "var(--light-grey)" : "var(--dark-grey)"};
+    }
   }
 `;
 
@@ -151,8 +169,4 @@ const Buttons = styled.div`
   display: flex;
   align-items: center;
   column-gap: 1rem;
-`;
-
-const ExtendedAccentButton = styled(AccentButton)`
-  padding: 1.5rem 3rem;
 `;

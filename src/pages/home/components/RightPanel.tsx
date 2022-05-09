@@ -59,7 +59,7 @@ const StyledRightPanel = styled.div`
 
 const UpcomingMeetingsCard = styled.ul`
   min-width: 55rem;
-  max-width: 80rem;
+  max-width: 100rem;
   margin: 3rem auto 0;
   list-style-type: none;
 

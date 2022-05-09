@@ -51,15 +51,6 @@ const MeetingsPage = () => {
       <RightPanel 
         meetingSelected={meetingSelected}
       />
-      {/* <RightContainer>
-        <MeetingIdContainer>
-          <DefaultButton>id</DefaultButton>
-          <MeetingId>{meetingSelected?.id}</MeetingId>
-        </MeetingIdContainer>
-        <Participants>
-
-        </Participants>
-      </RightContainer> */}
     </StyledMeetings>
   );
 };
@@ -69,21 +60,4 @@ export default MeetingsPage;
 const StyledMeetings = styled.div`
   display: flex;
   height: 100%;
-`;
-
-const MeetingIdContainer = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 2.5rem 0 3rem;
-  border-top: var(--grey-border);
-  border-bottom: var(--grey-border);
-`;
-
-const MeetingId = styled.h1`
-  flex-grow: 1;
-  color: var(--light-grey);
-`;
-
-const Participants = styled.div`
-  padding-top: 3.1rem;
 `;

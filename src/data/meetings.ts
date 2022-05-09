@@ -6,9 +6,11 @@ import Avatar4 from "../assets/images/avatar-4.svg";
 import Avatar5 from "../assets/images/avatar-5.svg";
 import Avatar6 from "../assets/images/avatar-6.svg";
 import Avatar7 from "../assets/images/avatar-7.svg";
-interface IParticipants {
+export interface IParticipant {
   id: number;
   avatar: string;
+  firstname?: string;
+  lastname?: string;
 }
 export interface IMeeting{
   id: string;
@@ -17,7 +19,7 @@ export interface IMeeting{
   startAt: string;
   endAt: string;
   status: string;
-  participants: IParticipants[];
+  participants: IParticipant[];
 }
 
 const meetings = [
@@ -31,28 +33,40 @@ const meetings = [
       participants: [
         {
           id: 0,
-          avatar: ProfilAvatar
+          avatar: ProfilAvatar,
+          firstname: "Michelle",
+          lastname: "Williams",
         },
         { 
           id: 1,
-          avatar: Avatar1
+          avatar: Avatar1,
+          firstname: "Damian",
+          lastname: "Marley",
         },
         { 
 
           id: 2,
-          avatar: Avatar2
+          avatar: Avatar2,
+          firstname: "Louis",
+          lastname: "Tornton",
         },
         { 
           id: 3,
-          avatar: Avatar3
+          avatar: Avatar3,
+          firstname: "Betty",
+          lastname: "Roggers",
         },
         {
           id: 4,
-          avatar: Avatar4
+          avatar: Avatar4,
+          firstname: "Simone",
+          lastname: "Wilkinson",
         },
         {
           id: 5,
-          avatar: Avatar5
+          avatar: Avatar5,
+          firstname: "Diana",
+          lastname: "Woodstone",
         }
       ]
     },
@@ -64,17 +78,23 @@ const meetings = [
       endAt: "16:30",
       status: "upcoming",
       participants: [
-        {
+        { 
           id: 3,
-          avatar: Avatar3
+          avatar: Avatar3,
+          firstname: "Betty",
+          lastname: "Roggers",
         },
         {
           id: 4,
-          avatar: Avatar4
+          avatar: Avatar4,
+          firstname: "Simone",
+          lastname: "Wilkinson",
         },
         {
           id: 5,
-          avatar: Avatar5
+          avatar: Avatar5,
+          firstname: "Diana",
+          lastname: "Woodstone",
         }
       ]
     },
@@ -88,11 +108,15 @@ const meetings = [
       participants: [
         {
           id: 6,
-          avatar: Avatar6
+          avatar: Avatar6,
+          firstname: "Nicholas",
+          lastname: "Strattenberg",
         },
         {
           id: 7,
-          avatar: Avatar7
+          avatar: Avatar7,
+          firstname: "Sarah",
+          lastname: "Brightman",
         },
       ]
     }

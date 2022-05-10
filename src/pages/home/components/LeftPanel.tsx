@@ -62,7 +62,7 @@ const StyledLeftPanel = styled.div`
   border-right: var(--grey-border); 
 `;
 
-const Cards = styled.div`
+const Cards = styled.section`
   display: grid;
   grid-template-columns: repeat(2, minmax(20rem, 23rem));
   gap: 3rem;

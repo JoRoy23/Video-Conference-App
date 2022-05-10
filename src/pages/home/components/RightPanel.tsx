@@ -18,10 +18,12 @@ const RightPanel = ({ upcomingMeetings }: IRighPanel) => {
 
   return (
     <StyledRightPanel>
-      <TimeCard />
-      <UpcomingMeetingsCard>
-        {renderMeetingCard()}
-      </UpcomingMeetingsCard>
+      <Content>
+        <TimeCard />
+        <UpcomingMeetingsCard>
+          {renderMeetingCard()}
+        </UpcomingMeetingsCard>
+      </Content>
     </StyledRightPanel>
   );
 };
@@ -57,10 +59,15 @@ const StyledRightPanel = styled.div`
   }
 `;
 
-const UpcomingMeetingsCard = styled.ul`
+const Content = styled.section`
+  width: 100%;
   min-width: 55rem;
   max-width: 100rem;
-  margin: 3rem auto 0;
+  margin: 0 auto;
+`;
+
+const UpcomingMeetingsCard = styled.ul`
+  margin-top: 3rem;
   list-style-type: none;
 
   > li {

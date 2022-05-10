@@ -7,11 +7,9 @@ import MainNavigation from "./navigation/MainNavigation";
 const MainLayout = () => {
   return (
     <StyledMainLayout>
-        <MainHeader />
-        <MainNavigation />
-        <MainContent>
-          <Outlet />
-        </MainContent>
+      <MainHeader />
+      <MainNavigation />
+      <Outlet />
     </StyledMainLayout>
   )
 }
@@ -19,18 +17,18 @@ const MainLayout = () => {
 export default MainLayout;
 
 const StyledMainLayout = styled.main`
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 
-    "mainNavigation mainHeader"
-    "mainNavigation mainContent";
-    height: 100vh;
-    overflow: hidden;
-`;
-
-const MainContent = styled.div`
-  grid-area: mainContent;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+  "mainNavigation mainHeader"
+  "mainNavigation mainContent";
+  height: 100vh;
   overflow: hidden;
-  background-color: var(--dark-black);
+
+  > div {
+    grid-area: mainContent;
+    overflow: hidden;
+    background-color: var(--dark-black);
+  }
 `;

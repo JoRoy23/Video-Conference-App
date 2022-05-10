@@ -37,9 +37,6 @@ export default TimeCard;
 
 const StyledTimeCard = styled.div`
   position: relative;
-  min-width: 55rem;
-  max-width: 100rem;
-  margin: 0 auto;
   overflow: hidden;
   border-radius: 1.4rem;
     

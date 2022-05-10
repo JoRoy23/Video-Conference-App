@@ -25,19 +25,21 @@ const LeftPanel = ({
 }: ILeftPanel) => {
   return (
     <StyledLeftPanel>
-      <MeetingsOptions 
-        meetingsStatusSelected={meetingsStatusSelected} 
-        upcomingMeetings={upcomingMeetings}
-        updateMeetingSelected={updateMeetingSelected}
-        updateMeetingsStatusSelected={updateMeetingsStatusSelected}
-      />
-      <MeetingsList 
-        meetingSelected={meetingSelected}
-        meetingsStatusSelected={meetingsStatusSelected}
-        onMeetingCardClick={onMeetingCardClick}
-        recordedMeetings={recordedMeetings}
-        upcomingMeetings={upcomingMeetings} 
-      />
+      <Content>
+        <MeetingsOptions 
+          meetingsStatusSelected={meetingsStatusSelected} 
+          upcomingMeetings={upcomingMeetings}
+          updateMeetingSelected={updateMeetingSelected}
+          updateMeetingsStatusSelected={updateMeetingsStatusSelected}
+        />
+        <MeetingsList 
+          meetingSelected={meetingSelected}
+          meetingsStatusSelected={meetingsStatusSelected}
+          onMeetingCardClick={onMeetingCardClick}
+          recordedMeetings={recordedMeetings}
+          upcomingMeetings={upcomingMeetings} 
+        />
+      </Content>
     </StyledLeftPanel>
   );
 };
@@ -46,9 +48,17 @@ export default LeftPanel;
 
 const StyledLeftPanel = styled.div`
   flex: 1 0 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 100%;
   padding: 2rem 0.8rem 0 2rem;
   border-right: var(--grey-border); 
+`;
+
+const Content = styled.section`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 55rem;
+  max-width: 100rem;
+  height: 100%;
+  margin: 0 auto;
 `;

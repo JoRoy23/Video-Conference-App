@@ -12,13 +12,13 @@ interface IRightPanel {
 const RightPanel = ({ meetingSelected }: IRightPanel) => {
   return (
     <StyledRightPanel>
-      <MeetingContent>
+      <Content>
         <MeetingTitle>{meetingSelected?.title}</MeetingTitle>
         <MeetingsActions />
         <MeetingDescription>{meetingSelected?.description}</MeetingDescription>
         <MeetingId id={meetingSelected?.id}/>
         <MeetingsParticipants meetingSelected={meetingSelected}/>
-      </MeetingContent>
+      </Content>
     </StyledRightPanel>
   );
 };
@@ -54,7 +54,7 @@ const StyledRightPanel = styled.div`
   }
 `;
 
-const MeetingContent = styled.div`
+const Content = styled.section`
   width: 100%;
   min-width: 55rem;
   max-width: 100rem;

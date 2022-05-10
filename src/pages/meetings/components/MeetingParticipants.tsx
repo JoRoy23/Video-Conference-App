@@ -18,7 +18,7 @@ const MeetingParticipants = ({ meetingSelected }: IMeetingParticipants) => {
       cards.push(<ParticipantCard key={participant.id} participant={participant}/>);
     });
 
-    cards.push(<InviteMemberCard />);
+    cards.push(<InviteMemberCard key="invite-member"/>);
     return cards;
   }
 

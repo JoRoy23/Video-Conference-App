@@ -11,30 +11,26 @@ import Tab from "../../../components/tabs/components/Tab";
 
 interface IMeetingsOptions {
   meetingsStatusSelected: string;
+  onResetClick: () => void;
+  onTabClick: (status: string) => void;
   upcomingMeetings: IMeeting[] | null;
-  updateMeetingSelected: (meeting: IMeeting | null) => void;
-  updateMeetingsStatusSelected: (status: string) => void;
 };
 
 const MeetingsOptions = ({ 
-  meetingsStatusSelected, 
-  upcomingMeetings,
-  updateMeetingSelected,  
-  updateMeetingsStatusSelected, 
+  meetingsStatusSelected,
+  onResetClick,
+  onTabClick, 
 }: IMeetingsOptions) => {
   const handleAddClick = () => {
     console.log("add meeting clicked")
   };
 
   const handleResetClick = () => {
-    const { UPCOMING } = meetingsStatus;
-
-    updateMeetingSelected(upcomingMeetings ? upcomingMeetings[0] : null);
-    updateMeetingsStatusSelected(UPCOMING);
+    onResetClick();
   };
 
   const handleTabClick = (status: string) => {
-    updateMeetingsStatusSelected(status);
+    onTabClick(status);
   };
 
   const renderTab = () => (

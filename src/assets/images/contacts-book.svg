@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="115px" height="140px" viewBox="0 0 115 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Contacts @1x</title>
+    <defs>
+        <linearGradient x1="0%" y1="21.875%" x2="88.3872438%" y2="72.1910125%" id="linearGradient-1">
+            <stop stop-color="#5D6476" offset="0%"></stop>
+            <stop stop-color="#434856" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="158" y="150" width="1280" height="900" rx="18"></rect>
+        <filter x="-9.8%" y="-10.0%" width="121.1%" height="130.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="10" dy="45" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="37.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.109803922   0 0 0 0 0.121568627   0 0 0 0 0.180392157  0 0 0 0.59727382 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="105" height="138" rx="12"></rect>
+        <filter x="-4.3%" y="-4.0%" width="114.3%" height="110.9%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="3" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0496448861   0 0 0 0 0.0557030904   0 0 0 0 0.0859941123  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Zoom-Redesign----Contacts-Empty" transform="translate(-1047.000000, -488.000000)">
+            <rect id="Rectangle-Copy-6" fill="url(#linearGradient-1)" opacity="0.0823567708" x="0" y="0" width="1600" height="1200"></rect>
+            <g id="Background-Elements" transform="translate(-73.000000, 45.000000)"></g>
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                <use fill="#1C1F2E" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <g id="Contacts-" mask="url(#mask-3)">
+                <g transform="translate(1048.000000, 490.000000)">
+                    <g id="Rectangle" stroke="none" fill="none">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <rect stroke-opacity="0.12" stroke="#FFFFFF" stroke-width="0.5" stroke-linejoin="square" fill="#232634" fill-rule="evenodd" x="0.25" y="0.25" width="104.5" height="137.5" rx="12"></rect>
+                    </g>
+                    <path d="M52,75 C44,75 38.2977479,78.6910173 34,84 C34,84 34,84 34,84 C31.4404784,87.161762 31.9286907,91.7997788 35.0904527,94.3593004 C36.4017621,95.4208366 38.0377513,96.0000261 39.7248765,96 L64.2751235,96 C68.3430332,96.0000261 71.6407257,92.7023336 71.6407257,88.6344239 C71.6407257,86.9472986 71.0615362,85.3113095 70,84 C70,84 70,84 70,84 C65.7174963,78.7098483 60,75 52,75 Z" id="Path-12" stroke="#E1E4E5" stroke-width="2" fill="#FFFFFF" fill-rule="evenodd" opacity="0.248697917" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <circle id="Oval" stroke="none" fill="#FFFFFF" fill-rule="evenodd" opacity="0.248697917" cx="52" cy="56" r="10"></circle>
+                    <path d="M105,15 L109.5,15 C111.985281,15 114,17.0147186 114,19.5 L114,32.5 C114,34.9852814 111.985281,37 109.5,37 L105,37 L105,37 L105,15 Z" id="Rectangle" stroke="none" fill="#F16B54" fill-rule="evenodd" opacity="0.850864955"></path>
+                    <path d="M105,44 L109.5,44 C111.985281,44 114,46.0147186 114,48.5 L114,61.5 C114,63.9852814 111.985281,66 109.5,66 L105,66 L105,66 L105,44 Z" id="Rectangle-Copy-10" stroke="none" fill="#F6D812" fill-rule="evenodd" opacity="0.850864955"></path>
+                    <path d="M105,72 L109.5,72 C111.985281,72 114,74.0147186 114,76.5 L114,89.5 C114,91.9852814 111.985281,94 109.5,94 L105,94 L105,94 L105,72 Z" id="Rectangle-Copy-11" stroke="none" fill="#30CD75" fill-rule="evenodd" opacity="0.850864955"></path>
+                    <path d="M105,101 L109.5,101 C111.985281,101 114,103.014719 114,105.5 L114,118.5 C114,120.985281 111.985281,123 109.5,123 L105,123 L105,123 L105,101 Z" id="Rectangle-Copy-12" stroke="none" fill="#42B5E6" fill-rule="evenodd" opacity="0.850864955"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

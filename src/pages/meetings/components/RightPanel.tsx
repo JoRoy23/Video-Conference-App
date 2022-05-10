@@ -27,7 +27,7 @@ export default RightPanel;
 
 const StyledRightPanel = styled.div`
   flex: 1 0 60%;
-  padding: 8rem 6.8rem 7.8rem 8rem;
+  padding: 8rem 6.8rem 8rem 8rem;
   overflow-x: hidden;
   overflow-y: auto;
   scrollbar-gutter: stable;

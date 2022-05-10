@@ -29,11 +29,14 @@ const MeetingsPage = () => {
     setMeetingSelected(meeting);
   };
 
-  const updateMeetingSelected = (meeting: IMeeting | null) => {
-    setMeetingSelected(meeting);
+  const onResetClick = () => {
+    const { UPCOMING } = meetingsStatus;
+
+    setMeetingsStatusSelected(UPCOMING);
+    setMeetingSelected(upcomingMeetings ? upcomingMeetings[0] : null);
   };
 
-  const updateMeetingsStatusSelected = (status: string) => {
+  const onTabClick = (status: string) => {
     setMeetingsStatusSelected(status);
   };
 
@@ -43,10 +46,10 @@ const MeetingsPage = () => {
         meetingSelected={meetingSelected}
         meetingsStatusSelected={meetingsStatusSelected}
         onMeetingCardClick={onMeetingCardClick}
+        onResetClick={onResetClick}
+        onTabClick={onTabClick}
         recordedMeetings={recordedMeetings}
         upcomingMeetings={upcomingMeetings}
-        updateMeetingSelected={updateMeetingSelected} 
-        updateMeetingsStatusSelected={updateMeetingsStatusSelected}
       />
       <RightPanel 
         meetingSelected={meetingSelected}

@@ -8,29 +8,29 @@ interface ILeftPanel {
   meetingSelected: IMeeting | null;
   meetingsStatusSelected: string;
   onMeetingCardClick: (meeting: IMeeting) => void;
+  onResetClick: () => void;
+  onTabClick: (status: string) => void;
   recordedMeetings: IMeeting[] | null;
   upcomingMeetings: IMeeting[] | null;
-  updateMeetingSelected: (meeting: IMeeting | null) => void;
-  updateMeetingsStatusSelected: (status: string) => void;
 };
 
 const LeftPanel = ({ 
   meetingSelected,
   meetingsStatusSelected, 
   onMeetingCardClick,
+  onResetClick,
+  onTabClick,
   recordedMeetings,
   upcomingMeetings,
-  updateMeetingSelected, 
-  updateMeetingsStatusSelected,
 }: ILeftPanel) => {
   return (
     <StyledLeftPanel>
       <Content>
         <MeetingsOptions 
           meetingsStatusSelected={meetingsStatusSelected} 
+          onResetClick={onResetClick}
+          onTabClick={onTabClick}
           upcomingMeetings={upcomingMeetings}
-          updateMeetingSelected={updateMeetingSelected}
-          updateMeetingsStatusSelected={updateMeetingsStatusSelected}
         />
         <MeetingsList 
           meetingSelected={meetingSelected}

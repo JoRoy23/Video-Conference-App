@@ -8,9 +8,9 @@ import Avatar6 from "../assets/images/avatar-6.svg";
 import Avatar7 from "../assets/images/avatar-7.svg";
 export interface IParticipant {
   id: number;
-  avatar: string;
-  firstname?: string;
-  lastname?: string;
+  avatar?: string;
+  firstName: string;
+  lastName: string;
 }
 export interface IMeeting{
   id: string;
@@ -34,39 +34,39 @@ const meetings = [
         {
           id: 0,
           avatar: ProfilAvatar,
-          firstname: "Michelle",
-          lastname: "Williams",
+          firstName: "Michelle",
+          lastName: "Williams",
         },
         { 
           id: 1,
           avatar: Avatar1,
-          firstname: "Damian",
-          lastname: "Marley",
+          firstName: "Damian",
+          lastName: "Marley",
         },
         { 
 
           id: 2,
           avatar: Avatar2,
-          firstname: "Louis",
-          lastname: "Tornton",
+          firstName: "Louis",
+          lastName: "Tornton",
         },
         { 
           id: 3,
           avatar: Avatar3,
-          firstname: "Betty",
-          lastname: "Roggers",
+          firstName: "Betty",
+          lastName: "Roggers",
         },
         {
           id: 4,
           avatar: Avatar4,
-          firstname: "Simone",
-          lastname: "Wilkinson",
+          firstName: "Simone",
+          lastName: "Wilkinson",
         },
         {
           id: 5,
           avatar: Avatar5,
-          firstname: "Diana",
-          lastname: "Woodstone",
+          firstName: "Diana",
+          lastName: "Woodstone",
         }
       ]
     },
@@ -81,20 +81,20 @@ const meetings = [
         { 
           id: 3,
           avatar: Avatar3,
-          firstname: "Betty",
-          lastname: "Roggers",
+          firstName: "Betty",
+          lastName: "Roggers",
         },
         {
           id: 4,
           avatar: Avatar4,
-          firstname: "Simone",
-          lastname: "Wilkinson",
+          firstName: "Simone",
+          lastName: "Wilkinson",
         },
         {
           id: 5,
           avatar: Avatar5,
-          firstname: "Diana",
-          lastname: "Woodstone",
+          firstName: "Diana",
+          lastName: "Woodstone",
         }
       ]
     },
@@ -109,14 +109,14 @@ const meetings = [
         {
           id: 6,
           avatar: Avatar6,
-          firstname: "Nicholas",
-          lastname: "Strattenberg",
+          firstName: "Nicholas",
+          lastName: "Strattenberg",
         },
         {
           id: 7,
           avatar: Avatar7,
-          firstname: "Sarah",
-          lastname: "Brightman",
+          firstName: "Sarah",
+          lastName: "Brightman",
         },
       ]
     }

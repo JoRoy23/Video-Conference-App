@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { ReactSVG } from "react-svg";
 import { IMeeting } from "../../../data/meetings";
-import { meetingsStatus, readableMeetingStatus } from "../../../config/config";
+import { meetingStatus, readableMeetingStatus } from "../../../config/config";
 import AddIcon from "../../../assets/icons/add.svg";
 import DefaultButton from "../../../components/buttons/DefaultButton";
 import RefreshIcon from "../../../assets/icons/refresh.svg";
@@ -10,14 +10,14 @@ import Tabs from "../../../components/tabs/Tabs";
 import Tab from "../../../components/tabs/components/Tab";
 
 interface IMeetingsOptions {
-  meetingsStatusSelected: string;
+  meetingStatusSelected: string;
   onResetClick: () => void;
   onTabClick: (status: string) => void;
   upcomingMeetings: IMeeting[] | null;
 };
 
 const MeetingsOptions = ({ 
-  meetingsStatusSelected,
+  meetingStatusSelected,
   onResetClick,
   onTabClick, 
 }: IMeetingsOptions) => {
@@ -33,14 +33,14 @@ const MeetingsOptions = ({
     onTabClick(status);
   };
 
-  const renderTab = () => (
-    Object.keys(meetingsStatus).map(key => {
-      const status = meetingsStatus[key as keyof typeof meetingsStatus];
+  const renderTabs = () => (
+    Object.keys(meetingStatus).map(key => {
+      const status = meetingStatus[key as keyof typeof meetingStatus];
 
       return (
         <Tab 
           key={key} 
-          active={status === meetingsStatusSelected} 
+          active={status === meetingStatusSelected} 
           onClick={() => {handleTabClick(status)}}
         >
           {readableMeetingStatus[status]}
@@ -55,7 +55,7 @@ const MeetingsOptions = ({
         <ReactSVG src={RefreshIcon}/>
       </DefaultButton>
       <Tabs>
-        {renderTab()}
+        {renderTabs()}
       </Tabs>
       <DefaultButton borderHidden onClick={handleAddClick}>
         <ReactSVG src={AddIcon}/>

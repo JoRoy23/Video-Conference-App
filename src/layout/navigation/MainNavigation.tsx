@@ -54,7 +54,7 @@ const MainNavigation = () => {
     },
   ];
 
-  const renderNavigationItem = () => (
+  const renderNavigationItems = () => (
     navigationItems.map(item => (
       <NavigationItem key={item.id}>
         <NavLink className={({ isActive }) => isActive ? "navigation-item navigation-item--active" : "navigation-item"} to={item.path}>
@@ -72,7 +72,7 @@ const MainNavigation = () => {
         <ReactSVG src={LogoIcon}/>
       </Logo>
       <NavigationItems>
-        {renderNavigationItem()}
+        {renderNavigationItems()}
       </NavigationItems>
       <NavLink className={({ isActive }) => isActive ? "navigation-item navigation-item--settings navigation-item--active" : "navigation-item navigation-item--settings"} to="/settings">
         <ReactSVG src={SettingsIcon}/>

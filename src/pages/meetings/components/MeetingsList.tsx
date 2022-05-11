@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { IMeeting } from "../../../data/meetings";
-import { meetingsStatus } from "../../../config/config";
+import { meetingStatus } from "../../../config/config";
 import MeetingCard from "../../../components/MeetingCard";
 
 interface IMeetingsList {
   meetingSelected: IMeeting | null;
-  meetingsStatusSelected: string;
+  meetingStatusSelected: string;
   onMeetingCardClick: (meeting: IMeeting) => void;
   recordedMeetings: IMeeting[] | null;
   upcomingMeetings: IMeeting[] | null;
@@ -14,16 +14,16 @@ interface IMeetingsList {
 
 const MeetingsList = ({ 
   meetingSelected,
-  meetingsStatusSelected, 
+  meetingStatusSelected, 
   onMeetingCardClick,
   recordedMeetings, 
   upcomingMeetings, 
 }: IMeetingsList) => {
-  const renderMeetingCard = () => {
-    const { RECORDED } = meetingsStatus;
+  const renderMeetingCards = () => {
+    const { RECORDED } = meetingStatus;
     let meetings = upcomingMeetings;
 
-    if (meetingsStatusSelected === RECORDED) {
+    if (meetingStatusSelected === RECORDED) {
       meetings = recordedMeetings;
     }
 
@@ -40,9 +40,9 @@ const MeetingsList = ({
 
   return (
     <StyledMeetingsList>
-      <h2>{meetingsStatusSelected === meetingsStatus.UPCOMING ? "Today" : "Recorded"}</h2>
+      <h2>{meetingStatusSelected === meetingStatus.UPCOMING ? "Today" : "Recorded"}</h2>
       <MeetingsCard>
-        {renderMeetingCard()}
+        {renderMeetingCards()}
       </MeetingsCard>
     </StyledMeetingsList>
   );
@@ -79,7 +79,7 @@ const StyledMeetingsList = styled.div`
   }
 
   > h2 {
-    padding: 3.1rem 3rem 2rem 3rem;
+    margin: 3.1rem 3rem 2rem 3rem;
     color: var(--white);
   }
 `;

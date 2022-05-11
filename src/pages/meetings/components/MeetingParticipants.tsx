@@ -11,7 +11,7 @@ interface IMeetingParticipants {
 };
 
 const MeetingParticipants = ({ meetingSelected }: IMeetingParticipants) => {
-  const renderCard = () => {
+  const renderCards = () => {
     const cards = [];
 
     meetingSelected?.participants.forEach(participant => {
@@ -29,7 +29,7 @@ const MeetingParticipants = ({ meetingSelected }: IMeetingParticipants) => {
         <Title>Participant:</Title>
       </TitleContainer>
       <Cards>
-        {renderCard()}
+        {renderCards()}
       </Cards>
     </StyledMeetingParticipants>
   );

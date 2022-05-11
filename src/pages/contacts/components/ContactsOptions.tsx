@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ReactSVG } from "react-svg";
-import { contactsTab, readableContactsTab } from "../../../config/config";
+import { contactTab, readableContactTab } from "../../../config/config";
 import AddIcon from "../../../assets/icons/add.svg";
 import DefaultButton from "../../../components/buttons/DefaultButton";
 import Tabs from "../../../components/tabs/Tabs";
@@ -21,9 +21,9 @@ const ContactsOptions = ({ onTabClick, tabSelected }: IContactsOptions) => {
     onTabClick(tab);
   };
 
-  const renderTab = () => (
-    Object.keys(contactsTab).map(key => {
-      const tab = contactsTab[key as keyof typeof contactsTab];
+  const renderTabs = () => (
+    Object.keys(contactTab).map(key => {
+      const tab = contactTab[key as keyof typeof contactTab];
 
       return (
         <Tab 
@@ -31,7 +31,7 @@ const ContactsOptions = ({ onTabClick, tabSelected }: IContactsOptions) => {
           active={tab === tabSelected} 
           onClick={() => {handleTabClick(tab)}}
         >
-          {readableContactsTab[tab]}
+          {readableContactTab[tab]}
         </Tab>
       );
     })
@@ -40,7 +40,7 @@ const ContactsOptions = ({ onTabClick, tabSelected }: IContactsOptions) => {
   return (
     <StyledContactsOptions>
       <Tabs>
-        {renderTab()}
+        {renderTabs()}
       </Tabs>
       <DefaultButton borderHidden onClick={handleAddClick}>
         <ReactSVG src={AddIcon}/>

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { IContact } from "../../../data/contacts";
+import ContactCard from "./ContactCard";
 import NoContactSelected from "./NoContactSelected";
 
 interface IRightPanel {
@@ -11,7 +12,9 @@ const RightPanel = ({ contactSelected }: IRightPanel) => {
   return (
     <StyledRightPanel contactSelected={contactSelected}>
       {contactSelected ? (
-        null
+        <Content>
+          <ContactCard contactSelected={contactSelected}/>
+        </Content>
       ) : (
         <NoContactSelected />
       )}
@@ -51,4 +54,12 @@ const StyledRightPanel = styled.div<{ contactSelected: IContact | null}>`
     background-color: var(--scrollbar-color);
     background-clip: padding-box;
   }
+`;
+
+const Content = styled.section`
+  height: 100%;
+  width: 100%;
+  min-width: 55rem;
+  max-width: 100rem;
+  margin: 0 auto;
 `;

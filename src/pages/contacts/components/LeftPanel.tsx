@@ -1,13 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import { contactTab } from "../../../config/config";
+import { IContact } from "../../../data/contacts";
 import ContactsOptions from "./ContactsOptions";
-
+import PersonalContacts from "./PersonalContacts";
 interface ILeftPanel {
+  contacts: IContact[] | null;
+  contactSelected: IContact | null;
+  onContactClick: (contact: IContact) => void;
   onTabClick: (tab: string) => void;
   tabSelected: string;
 };
 
-const LeftPanel = ({ onTabClick, tabSelected }: ILeftPanel) => {
+const LeftPanel = ({ 
+  contacts,
+  contactSelected, 
+  onContactClick,
+  onTabClick, 
+  tabSelected, 
+}: ILeftPanel) => {
   return (
     <StyledLeftPanel>
       <Content>
@@ -15,6 +26,13 @@ const LeftPanel = ({ onTabClick, tabSelected }: ILeftPanel) => {
           onTabClick={onTabClick} 
           tabSelected={tabSelected}
         />
+        {tabSelected === contactTab.CONTACTS && (
+          <PersonalContacts
+            contacts={contacts}
+            contactSelected={contactSelected}
+            onContactClick={onContactClick}
+          />
+        )}
       </Content>
     </StyledLeftPanel>
   );

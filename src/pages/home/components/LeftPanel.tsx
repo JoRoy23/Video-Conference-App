@@ -39,7 +39,7 @@ const LeftPanel = () => {
     }
   ];
 
-  const renderCard = () => (
+  const renderCards = () => (
     cards.map(card => (
        <HomeCard key={card.id} card={card}/>
     ))
@@ -48,7 +48,7 @@ const LeftPanel = () => {
   return (
     <StyledLeftPanel>
       <Cards>
-        {renderCard()}
+        {renderCards()}
       </Cards>
     </StyledLeftPanel>
   );

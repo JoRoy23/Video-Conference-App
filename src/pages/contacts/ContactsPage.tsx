@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from "react";
 import styled from "styled-components";
 import { MainHeaderContext } from '../../contexts/providers/MainHeaderProvider';
-import { IContact } from "../../data/contacts";
+import personalContacts, { IContact } from "../../data/contacts";
 import LeftPanel from "./components/LeftPanel";
 import RightPanel from "./components/RightPanel";
 
@@ -13,8 +13,12 @@ const ContactsPage = () => {
 
   useEffect(() => {
     setMainHeaderTitle("Contacts");
-    setContacts(contacts);
-  }, [contacts, setMainHeaderTitle]);
+    setContacts(personalContacts);
+  }, [setMainHeaderTitle]);
+
+  const onContactClick = (contact: IContact) => {
+    setContactSelected(contact);
+  };
 
   const onTabClick = (tab: string) => {
     setTabSelected(tab);
@@ -23,6 +27,9 @@ const ContactsPage = () => {
   return (
     <StyledContacts>
       <LeftPanel 
+        contacts={contacts}
+        contactSelected={contactSelected}
+        onContactClick={onContactClick}
         onTabClick={onTabClick} 
         tabSelected={tabSelected}
       />

@@ -6,7 +6,7 @@ import MeetingsOptions from "./MeetingsOptions";
 
 interface ILeftPanel {
   meetingSelected: IMeeting | null;
-  meetingsStatusSelected: string;
+  meetingStatusSelected: string;
   onMeetingCardClick: (meeting: IMeeting) => void;
   onResetClick: () => void;
   onTabClick: (status: string) => void;
@@ -16,7 +16,7 @@ interface ILeftPanel {
 
 const LeftPanel = ({ 
   meetingSelected,
-  meetingsStatusSelected, 
+  meetingStatusSelected, 
   onMeetingCardClick,
   onResetClick,
   onTabClick,
@@ -27,14 +27,14 @@ const LeftPanel = ({
     <StyledLeftPanel>
       <Content>
         <MeetingsOptions 
-          meetingsStatusSelected={meetingsStatusSelected} 
+          meetingStatusSelected={meetingStatusSelected} 
           onResetClick={onResetClick}
           onTabClick={onTabClick}
           upcomingMeetings={upcomingMeetings}
         />
         <MeetingsList 
           meetingSelected={meetingSelected}
-          meetingsStatusSelected={meetingsStatusSelected}
+          meetingStatusSelected={meetingStatusSelected}
           onMeetingCardClick={onMeetingCardClick}
           recordedMeetings={recordedMeetings}
           upcomingMeetings={upcomingMeetings} 

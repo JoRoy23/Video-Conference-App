@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { getFullName } from "../config/config";
 import { IParticipant } from "../data/meetings";
 
 interface IParticipantCard {
@@ -7,16 +8,10 @@ interface IParticipantCard {
 };
 
 const ParticipantCard = ({ participant }: IParticipantCard) => {
-  const getFullname = () => {
-    const { firstname, lastname } = participant;
-
-    return `${firstname} ${lastname}`;
-  };
-
   return (
     <StyledParticipant>
       <Avatar src={participant.avatar} alt="avatar"/>
-      <Fullname>{getFullname()}</Fullname>
+      <Fullname>{getFullName(participant)}</Fullname>
     </StyledParticipant>
   );
 };

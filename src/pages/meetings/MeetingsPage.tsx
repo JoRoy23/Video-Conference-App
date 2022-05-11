@@ -1,21 +1,21 @@
 import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import { MainHeaderContext } from "../../contexts/providers/MainHeaderProvider";
-import { meetingsStatus } from "../../config/config";
+import { meetingStatus } from "../../config/config";
 import meetings, { IMeeting } from "../../data/meetings";
 import LeftPanel from "./components/LeftPanel";
 import RightPanel from "./components/RightPanel";
 
 
 const MeetingsPage = () => {
-  const [meetingsStatusSelected, setMeetingsStatusSelected] = useState(meetingsStatus.UPCOMING);
+  const [meetingStatusSelected, setMeetingStatusSelected] = useState(meetingStatus.UPCOMING);
   const [meetingSelected, setMeetingSelected] = useState<IMeeting | null>(null)
   const [recordedMeetings, serRecordedMeetings] = useState<IMeeting[] | null>(null)
   const [upcomingMeetings, setUpcomingMeetings] = useState<IMeeting[] | null>(null)
   const {setMainHeaderTitle} = useContext(MainHeaderContext)!;
 
   useEffect(() => {
-    const { RECORDED, UPCOMING } = meetingsStatus;
+    const { RECORDED, UPCOMING } = meetingStatus;
     const meetingsRecorded = meetings.filter(meeting => meeting.status === RECORDED);
     const meetingsUpcoming = meetings.filter(meeting => meeting.status === UPCOMING);
 
@@ -30,21 +30,21 @@ const MeetingsPage = () => {
   };
 
   const onResetClick = () => {
-    const { UPCOMING } = meetingsStatus;
+    const { UPCOMING } = meetingStatus;
 
-    setMeetingsStatusSelected(UPCOMING);
+    setMeetingStatusSelected(UPCOMING);
     setMeetingSelected(upcomingMeetings ? upcomingMeetings[0] : null);
   };
 
   const onTabClick = (status: string) => {
-    setMeetingsStatusSelected(status);
+    setMeetingStatusSelected(status);
   };
 
   return (
     <StyledMeetings>
       <LeftPanel 
         meetingSelected={meetingSelected}
-        meetingsStatusSelected={meetingsStatusSelected}
+        meetingStatusSelected={meetingStatusSelected}
         onMeetingCardClick={onMeetingCardClick}
         onResetClick={onResetClick}
         onTabClick={onTabClick}

@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from "react";
 import styled from "styled-components";
 import { MainHeaderContext } from '../../contexts/providers/MainHeaderProvider';
-import { meetingsStatus } from "../../config/config";
+import { meetingStatus } from "../../config/config";
 import meetings, { IMeeting } from "../../data/meetings";
 import LeftPanel from "./components/LeftPanel";
 import RightPanel from "./components/RightPanel";
@@ -11,7 +11,7 @@ const HomePage = () => {
   const {setMainHeaderTitle} = useContext(MainHeaderContext)!;
 
   useEffect(() => {
-    const { UPCOMING } = meetingsStatus;
+    const { UPCOMING } = meetingStatus;
     const todayMeetings = meetings?.filter(meeting => meeting.status === UPCOMING);
 
     setMainHeaderTitle("Home");

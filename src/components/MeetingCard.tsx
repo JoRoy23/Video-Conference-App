@@ -37,7 +37,7 @@ const MeetingCard = ({ meeting, readOnly, selected, onMeetingCardClick }: IMeeti
     }
   };
 
-  const renderParticipantAvatar = () => {
+  const renderParticipantsAvatar = () => {
     let { participants } = meeting;
     
     participants = participants.length > nbOfAvatarsVisible ? participants.slice(0, nbOfAvatarsVisible) : participants;
@@ -70,7 +70,7 @@ const MeetingCard = ({ meeting, readOnly, selected, onMeetingCardClick }: IMeeti
       <BottomContainer>
         <Participants>
           <Avatars>
-            {renderParticipantAvatar()}
+            {renderParticipantsAvatar()}
           </Avatars>
           {meeting.participants.length > nbOfAvatarsVisible && (
             <MoreIndicator 
@@ -82,7 +82,11 @@ const MeetingCard = ({ meeting, readOnly, selected, onMeetingCardClick }: IMeeti
           )}
         </Participants>
         <Buttons>
-          {selected ? <ActiveMeetingCardButton>id</ActiveMeetingCardButton> : <DefaultButton>id</DefaultButton>}
+          {selected ? (
+            <ActiveMeetingCardButton>id</ActiveMeetingCardButton>
+          ) : (
+            <DefaultButton>id</DefaultButton>
+          )}
           {!readOnly && <LargeAccentButton>Start</LargeAccentButton>}
         </Buttons>
       </BottomContainer>

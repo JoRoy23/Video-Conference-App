@@ -9,7 +9,7 @@ interface IRighPanel {
 };
 
 const RightPanel = ({ upcomingMeetings }: IRighPanel) => {
-  const renderMeetingCard = () => (
+  const renderMeetingCards = () => (
     upcomingMeetings?.map(meeting => (
       <MeetingCard key={meeting.id} meeting={meeting}/>
     ))
@@ -21,7 +21,7 @@ const RightPanel = ({ upcomingMeetings }: IRighPanel) => {
       <Content>
         <TimeCard />
         <UpcomingMeetingsCard>
-          {renderMeetingCard()}
+          {renderMeetingCards()}
         </UpcomingMeetingsCard>
       </Content>
     </StyledRightPanel>

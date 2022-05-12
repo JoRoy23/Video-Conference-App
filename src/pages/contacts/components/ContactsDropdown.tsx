@@ -58,7 +58,9 @@ const ContactsDropdown = ({
           <ReactSVG src={CaretIcon}/>
           <h5>{label}</h5>
         </LeftContainer>
-        <NumberIndicator number={contacts?.length}/>
+        <NumberIndicator>
+          {contacts?.length}
+        </NumberIndicator>
       </DropdownHeader>
       {dropdownListVisible && (
         <DropdownList>

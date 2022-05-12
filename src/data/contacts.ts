@@ -13,6 +13,10 @@ export interface IContact {
   firstName: string;
   lastName: string;
   type: string;
+  location: string;
+  homePhone: string;
+  workPhone?: string;
+  timeZone: string;
 };
 
 const personalContacts = [
@@ -22,6 +26,10 @@ const personalContacts = [
     firstName: "Damian",
     lastName: "Marley",
     type: contactType.STARRED,
+    location: "Nebraska, USA",
+    homePhone: "355-983-7263",
+    workPhone: "234-424-9823",
+    timeZone: "-4h, GMT",
   },
   { 
 
@@ -30,6 +38,10 @@ const personalContacts = [
     firstName: "Louis",
     lastName: "Tornton",
     type: contactType.EXTERNAL,
+    location: "Los Angeles, USA",
+    homePhone: "843-439-9329",
+    workPhone: "424-982-9823",
+    timeZone: "-10h, GMT",
   },
   { 
     id: 2,
@@ -37,6 +49,10 @@ const personalContacts = [
     firstName: "Betty",
     lastName: "Roggers",
     type: contactType.STARRED,
+    location: "San Diego, USA",
+    homePhone: "533-987-0183",
+    workPhone: "897-982-9021",
+    timeZone: "-6h, GMT",
   },
   {
     id: 3,
@@ -44,6 +60,10 @@ const personalContacts = [
     firstName: "Simone",
     lastName: "Wilkinson",
     type: contactType.STARRED,
+    location: "San Antonio, USA",
+    homePhone: "533-762-0923",
+    workPhone: "332-982-0922",
+    timeZone: "-2h, GMT",
   },
   {
     id: 4,
@@ -51,6 +71,10 @@ const personalContacts = [
     firstName: "Diana",
     lastName: "Woodstone",
     type: contactType.STARRED,
+    location: "San Diego, USA",
+    homePhone: "533-762-0923",
+    workPhone: "872-092-9287",
+    timeZone: "-6h, GMT",
   },
   {
     id: 5,
@@ -58,6 +82,10 @@ const personalContacts = [
     firstName: "Nicholas",
     lastName: "Strattenberg",
     type: contactType.CLOUD,
+    location: "Colorado, USA",
+    homePhone: "981-139-9173",
+    workPhone: "897-982-0912",
+    timeZone: "-12h, GMT",
   },
   {
     id: 6,
@@ -65,6 +93,10 @@ const personalContacts = [
     firstName: "Sarah",
     lastName: "Brightman",
     type: contactType.CLOUD,
+    location: "Montana, USA",
+    homePhone: "723-917-0133",
+    workPhone: "872-098-9012",
+    timeZone: "-8h, GMT",
   },
 ];
 

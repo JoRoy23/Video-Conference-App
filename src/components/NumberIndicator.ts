@@ -1,19 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-interface INumberIndicator {
-  number: number | undefined;
-};
-
-const NumberIndicator = ({ number }: INumberIndicator) => {
-  return (
-    <StyledNumberIndicator>{number}</StyledNumberIndicator>
-  );
-};
-
-export default NumberIndicator;
-
-const StyledNumberIndicator = styled.div`
+const NumberIndicator = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,3 +14,5 @@ const StyledNumberIndicator = styled.div`
   background-color: var(--light-black);
   color: var(--medium-grey);
 `;
+
+export default NumberIndicator;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="16px" viewBox="0 0 22 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle 6</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.398251488">
+        <g id="Zoom-Redesign----Contacts-2" transform="translate(-1121.000000, -502.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="Content-w-border" transform="translate(850.000000, 325.000000)">
+                <g id="Actions" transform="translate(1.000000, 161.000000)">
+                    <g id="Videocall" transform="translate(251.000000, 0.000000)">
+                        <path d="M36,17 C38.209139,17 40,18.790861 40,21 L40,27 C40,29.209139 38.209139,31 36,31 L28,31 C25.790861,31 24,29.209139 24,27 L24,21 C24,18.790861 25.790861,17 28,17 L36,17 Z M21.381966,20.854102 C21.5965095,20.854102 21.8081065,20.9040533 22,21 L22.2111456,21.1055728 C23.3074738,21.6537369 24,22.7742679 24,24 C24,25.2257321 23.3074738,26.3462631 22.2111456,26.8944272 L22,27 C21.3173385,27.3413307 20.4872288,27.0646275 20.145898,26.381966 C20.0499513,26.1900725 20,25.9784755 20,25.763932 L20,22.236068 C20,21.4728292 20.6187273,20.854102 21.381966,20.854102 Z" id="Rectangle-6" transform="translate(30.000000, 24.000000) scale(-1, 1) translate(-30.000000, -24.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

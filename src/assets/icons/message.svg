@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Messages</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Zoom-Redesign----Contacts-2" transform="translate(-973.000000, -503.000000)" fill-rule="nonzero" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="Content-w-border" transform="translate(850.000000, 325.000000)">
+                <g id="Actions" transform="translate(1.000000, 161.000000)">
+                    <g id="Message" transform="translate(103.000000, 0.000000)">
+                        <g id="Messages" transform="translate(20.000000, 18.000000)">
+                            <path d="M12,0 C14.209139,-4.05812251e-16 16,1.790861 16,4 L16,8 C16,10.209139 14.209139,12 12,12 L11.765,12 L11.9428135,14.2685124 C11.9600316,14.4887543 11.7954484,14.6812537 11.5752065,14.6984718 C11.4985753,14.7044627 11.4218407,14.6882474 11.3541846,14.6517662 L6.438,12 L4,12 C1.790861,12 2.705415e-16,10.209139 0,8 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 L12,0 Z" id="Rectangle-6" transform="translate(8.000000, 7.349844) scale(-1, 1) translate(-8.000000, -7.349844) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

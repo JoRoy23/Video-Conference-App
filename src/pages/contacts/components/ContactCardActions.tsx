@@ -6,13 +6,25 @@ import EditIcon from "../../../assets/icons/edit.svg";
 import DefaultButton from "../../../components/buttons/DefaultButton";
 import LargeAccentButton from "../../../components/buttons/LargeAccentButton";
 import LargeDefaultButton from "../../../components/buttons/LargeDefaultButton";
+import MessageIcon from "../../../assets/icons/message.svg";
+import PhoneIcon from "../../../assets/icons/phone.svg";
+import VideocallIcon from "../../../assets/icons/videocall.svg";
 
 const ContactCardActions = () => {
   return (
     <StyledContactCardsActions>
-      <LargeDefaultButton>Call</LargeDefaultButton>
-      <LargeAccentButton>Message</LargeAccentButton>
-      <LargeDefaultButton>Videocall</LargeDefaultButton>
+      <LargeDefaultButton>
+        <ReactSVG src={PhoneIcon}/>
+        <span>Call</span>
+      </LargeDefaultButton>
+      <LargeAccentButton>
+        <ReactSVG src={MessageIcon}/>
+        <span>Message</span>    
+      </LargeAccentButton>
+      <LargeDefaultButton>
+        <ReactSVG src={VideocallIcon}/>
+        <span>Videocall</span>
+      </LargeDefaultButton>
       <DefaultButton>
         <ReactSVG src={EditIcon}/>
       </DefaultButton>
